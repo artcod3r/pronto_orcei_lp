@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — ProntoOrcei</title>
+  <meta name="description" content="Política de Privacidade e Proteção de Dados do aplicativo ProntoOrcei em conformidade com a LGPD (Lei nº 13.709/2018).">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prontoorcei.com.br/privacidade.html">
+  <meta property="og:title" content="Política de Privacidade — ProntoOrcei">
+  <meta property="og:description" content="Saiba como protegemos seus dados e garantimos sua privacidade no ProntoOrcei em conformidade com a LGPD.">
+  <meta property="og:image" content="logo_prontoorcei_wo_bg.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#0F4C81',
+              dark: '#0A2540',
+              blue: '#2D82B7',
+              emerald: '#00A86B',
+              surface: '#F8F9FA',
+              accent: '#10B981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glow-effect {
+      background: radial-gradient(circle at 50% 50%, rgba(0, 168, 107, 0.12) 0%, rgba(15, 76, 129, 0.05) 60%, transparent 100%);
+    }
+  </style>
+</head>
+<body class="bg-brand-surface text-slate-800 antialiased selection:bg-brand-emerald selection:text-white flex flex-col min-h-screen">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl overflow-hidden shadow-md shadow-brand-navy/10 group-hover:scale-105 transition-transform flex items-center justify-center bg-white border border-slate-100">
+          <img src="logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-11 h-11 object-contain" onerror="this.src='https://placehold.co/100x100/0F4C81/ffffff?text=PO'">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight text-brand-dark flex items-center gap-1">
+            Pronto<span class="text-brand-emerald">Orcei</span>
+          </span>
+          <span class="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">Orçamentos & Recibos</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="index.html" class="hover:text-brand-navy transition-colors">Página Inicial</a>
+        <a href="termos.html" class="hover:text-brand-navy transition-colors">Termos de Uso</a>
+        <a href="privacidade.html" class="text-brand-navy font-bold flex items-center gap-1.5 border-b-2 border-brand-emerald pb-0.5">
+          <span>Privacidade</span>
+        </a>
+      </nav>
+
+      <!-- Back Button -->
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm px-4 py-2.5 rounded-xl transition-all">
+          <i data-lucide="arrow-left" class="w-4 h-4 text-brand-navy"></i>
+          <span>Voltar ao Início</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="relative py-12 md:py-16 bg-gradient-to-b from-white to-brand-surface border-b border-slate-200/60 overflow-hidden">
+    <div class="absolute inset-0 glow-effect pointer-events-none -z-10"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-emerald/10 text-brand-emerald text-xs font-bold tracking-wide uppercase mb-4">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+          LGPD Compliance
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-dark tracking-tight">
+          Política de Privacidade
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          Esta Política descreve com transparência como a <strong>ARTCODER SISTEMAS E TECNOLOGIA LTDA</strong> coleta, utiliza, armazena e protege os dados pessoais no âmbito do aplicativo <strong>ProntoOrcei</strong>, em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs sm:text-sm text-slate-500 font-medium">
+          <span class="flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-4 h-4 text-brand-emerald"></i>
+            Última atualização: Setembro de 2026
+          </span>
+          <span class="flex items-center gap-1.5">
+            <i data-lucide="building-2" class="w-4 h-4 text-brand-navy"></i>
+            CNPJ: 41.283.355/0001-12
+          </span>
+          <span class="flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-4 h-4 text-brand-emerald"></i>
+            Curitiba / PR
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT WITH TOC -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- STICKY TABLE OF CONTENTS (DESKTOP) -->
+      <aside class="hidden lg:block lg:col-span-4 sticky top-28">
+        <div class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm">
+          <h2 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
+            <i data-lucide="list" class="w-4 h-4 text-brand-navy"></i>
+            Índice de Privacidade
+          </h2>
+          <nav class="space-y-1.5 text-sm">
+            <a href="#1-visao-geral" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">1. Visão Geral e Controlador</a>
+            <a href="#2-dados-coletados" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">2. Quais Dados Coletamos</a>
+            <a href="#3-finalidades" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">3. Finalidade do Tratamento</a>
+            <a href="#4-bases-legais" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">4. Bases Legais (LGPD)</a>
+            <a href="#5-compartilhamento" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">5. Compartilhamento de Dados</a>
+            <a href="#6-seguranca" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">6. Segurança e Armazenamento</a>
+            <a href="#7-direitos-titular" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">7. Seus Direitos como Titular</a>
+            <a href="#8-retencao-exclusao" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">8. Retenção e Exclusão de Dados</a>
+            <a href="#9-dpo-contato" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">9. Encarregado (DPO) e Contato</a>
+            <a href="#10-alteracoes" class="block py-1.5 px-3 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-50 font-medium transition-colors">10. Alterações desta Política</a>
+          </nav>
+
+          <div class="mt-6 pt-6 border-t border-slate-100 flex flex-col gap-3">
+            <a href="termos.html" class="flex items-center justify-between text-xs font-semibold text-brand-navy hover:text-brand-dark group p-2 rounded-lg bg-brand-surface border border-slate-200">
+              <span class="flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-brand-emerald"></i>
+                Ver Termos de Uso
+              </span>
+              <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- CONTENT BODY -->
+      <article class="lg:col-span-8 bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-10 shadow-sm space-y-10 leading-relaxed text-slate-700">
+        
+        <!-- RESUMO INICIAL / CALLOUT -->
+        <div class="bg-gradient-to-r from-brand-emerald/10 via-brand-navy/5 to-transparent border-l-4 border-brand-emerald p-5 rounded-r-2xl">
+          <p class="text-sm font-semibold text-brand-dark mb-1">Nosso Compromisso com Você</p>
+          <p class="text-xs sm:text-sm text-slate-600">
+            A sua privacidade e a confiança dos seus clientes são pilares fundamentais para nós. O <strong>ProntoOrcei</strong> coleta apenas as informações estritamente necessárias para gerar seus orçamentos e recibos em PDF com agilidade e segurança. <strong>Nós nunca vendemos seus dados ou os dados cadastrais dos seus clientes para empresas terceiras.</strong>
+          </p>
+        </div>
+
+        <!-- SEÇÃO 1 -->
+        <section id="1-visao-geral" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">1</span>
+            Visão Geral e Identificação do Controlador
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Esta Política de Privacidade estabelece as diretrizes de tratamento de dados pessoais no aplicativo móvel <strong>ProntoOrcei</strong> e em sua página de apresentação na web (<a href="https://prontoorcei.com.br" class="text-brand-navy hover:underline font-semibold">prontoorcei.com.br</a>).
+            </p>
+            <p>
+              O controlador dos seus dados pessoais é a:
+            </p>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-sm space-y-1">
+              <p><strong>Razão Social:</strong> ARTCODER SISTEMAS E TECNOLOGIA LTDA</p>
+              <p><strong>CNPJ:</strong> 41.283.355/0001-12</p>
+              <p><strong>Localidade:</strong> Curitiba / PR — Brasil</p>
+              <p><strong>Canal de Privacidade (DPO):</strong> <a href="mailto:contato@prontoorcei.com.br" class="text-brand-navy hover:underline font-medium">contato@prontoorcei.com.br</a></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 2 -->
+        <section id="2-dados-coletados" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">2</span>
+            Quais Dados Coletamos
+          </h2>
+          <div class="mt-4 space-y-4 text-sm sm:text-base">
+            <p>
+              Para disponibilizar as funcionalidades de emissão de orçamentos e recibos, tratamos os seguintes grupos de dados:
+            </p>
+            
+            <div class="space-y-3">
+              <div class="border border-slate-200 rounded-xl p-4">
+                <h4 class="font-bold text-brand-navy text-sm sm:text-base flex items-center gap-2">
+                  <i data-lucide="user" class="w-4 h-4 text-brand-emerald"></i>
+                  A. Dados Cadastrais do Usuário (Emissor)
+                </h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  Nome completo ou Razão Social, CPF ou CNPJ, endereço de e-mail, telefone para contato (WhatsApp), endereço comercial, logotipo da empresa e assinatura manual coletada no dispositivo.
+                </p>
+              </div>
+
+              <div class="border border-slate-200 rounded-xl p-4">
+                <h4 class="font-bold text-brand-navy text-sm sm:text-base flex items-center gap-2">
+                  <i data-lucide="users" class="w-4 h-4 text-brand-emerald"></i>
+                  B. Dados dos Clientes Finais (Tomadores do Serviço)
+                </h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  Dados inseridos voluntariamente pelo Usuário para preenchimento dos orçamentos e recibos, tais como nome do cliente, telefone, e-mail e endereço da obra/serviço.
+                </p>
+                <p class="text-xs text-slate-500 mt-2 italic">
+                  * Importante: Em relação aos dados de terceiros que você cadastra no app, você atua como <strong>Controlador</strong> e a ARTCODER atua estritamente como <strong>Operadora</strong>, processando-os apenas para a emissão dos PDFs solicitados por você.
+                </p>
+              </div>
+
+              <div class="border border-slate-200 rounded-xl p-4">
+                <h4 class="font-bold text-brand-navy text-sm sm:text-base flex items-center gap-2">
+                  <i data-lucide="smartphone" class="w-4 h-4 text-brand-emerald"></i>
+                  C. Dados Técnicos e de Navegação
+                </h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  Modelo do aparelho, versão do sistema operacional (Android ou iOS), identificadores exclusivos do dispositivo para notificações, logs de erros (crash logs) para diagnóstico e dados anonimizados de desempenho.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 3 -->
+        <section id="3-finalidades" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">3</span>
+            Finalidade do Tratamento de Dados
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Tratamos as informações coletadas para finalidades legítimas, específicas e informadas:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 marker:text-brand-emerald">
+              <li><strong>Geração dos Documentos:</strong> Renderizar e emitir orçamentos e recibos em PDF profissionais com os dados e assinaturas correspondentes;</li>
+              <li><strong>Organização e Produtividade:</strong> Manter seu catálogo de serviços, tabela de preços e clientes salvos para reutilização rápida;</li>
+              <li><strong>Compartilhamento Facilitado:</strong> Permitir o disparo direto do link ou arquivo PDF por meio do WhatsApp, e-mail ou compartilhador nativo do sistema;</li>
+              <li><strong>Gestão de Assinaturas:</strong> Validar o status de planos (Gratuito, Mensal ou Anual) junto às lojas de aplicativos Google Play e Apple App Store;</li>
+              <li><strong>Suporte Técnico e Aprimoramento:</strong> Responder chamados, corrigir bugs de renderização e melhorar a velocidade e usabilidade do app.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 4 -->
+        <section id="4-bases-legais" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">4</span>
+            Bases Legais (Artigo 7º da LGPD)
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Todo o processamento de dados realizado pela ARTCODER encontra amparo estrito nas hipóteses do Artigo 7º da Lei Geral de Proteção de Dados:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 marker:text-brand-navy">
+              <li><strong>Execução de Contrato (Inciso V):</strong> Tratamento essencial para que você utilize as funcionalidades contratadas do ProntoOrcei;</li>
+              <li><strong>Cumprimento de Obrigação Legal ou Regulatória (Inciso II):</strong> Guarda de registros de acesso nos termos do Marco Civil da Internet (Lei 12.965/2014);</li>
+              <li><strong>Legítimo Interesse (Inciso IX):</strong> Prevenção contra fraudes, auditoria de segurança e aprimoramento da performance do software;</li>
+              <li><strong>Consentimento (Inciso I):</strong> Em situações específicas em que você autoriza expressamente a coleta (ex: recebimento de novidades ou acesso opcional à galeria de fotos para seleção de logotipo).</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 5 -->
+        <section id="5-compartilhamento" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">5</span>
+            Compartilhamento de Dados
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-950 font-medium text-sm flex items-center gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald flex-shrink-0"></i>
+              <span>Não vendemos, não alugamos e não comercializamos dados pessoais com quaisquer parceiros de publicidade ou corretores de dados.</span>
+            </div>
+            <p>
+              O compartilhamento de dados ocorre de maneira estritamente restrita com prestadores de serviços de infraestrutura imprescindíveis:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 marker:text-brand-emerald">
+              <li><strong>Provedores de Nuvem e Servidores Seguros:</strong> Para hospedagem de banco de dados e backup criptografado (com servidores de alta disponibilidade e conformidade internacional com ISO/IEC 27001);</li>
+              <li><strong>Lojas de Aplicativos (Google e Apple):</strong> Para autenticação do status de compra e emissão de recibos de assinaturas;</li>
+              <li><strong>Autoridades Judiciais e Policiais:</strong> Mediante determinação judicial ou requisição legal formal emitida por autoridade competente.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 6 -->
+        <section id="6-seguranca" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">6</span>
+            Segurança da Informação e Armazenamento
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Adotamos práticas técnicas e organizacionais rígidas para resguardar a integridade, disponibilidade e confidencialidade dos dados armazenados:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 marker:text-brand-emerald">
+              <li>Tráfego de dados protegido por criptografia de ponta a ponta em trânsito (protocolo SSL/TLS HTTPS);</li>
+              <li>Armazenamento local seguro no dispositivo com restrição de acesso por aplicativo (sandbox do SO);</li>
+              <li>Controle de privilégios mínimos de acesso por parte da equipe técnica da ARTCODER;</li>
+              <li>Monitoramento constante contra vulnerabilidades e tentativas de invasão.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 7 -->
+        <section id="7-direitos-titular" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">7</span>
+            Seus Direitos como Titular (Artigo 18 da LGPD)
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              A LGPD assegura a você os seguintes direitos fundamentais, exercíveis a qualquer momento de forma simplificada e gratuita:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-brand-navy text-sm block">Confirmação e Acesso</span>
+                <span class="text-xs text-slate-600">Saber se tratamos seus dados e solicitar uma cópia das informações arquivadas.</span>
+              </div>
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-brand-navy text-sm block">Correção de Dados</span>
+                <span class="text-xs text-slate-600">Solicitar a atualização imediata de dados incompletos, inexatos ou desatualizados.</span>
+              </div>
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-brand-navy text-sm block">Eliminação e Exclusão</span>
+                <span class="text-xs text-slate-600">Requerer a exclusão definitiva dos seus dados e encerramento de sua conta.</span>
+              </div>
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-brand-navy text-sm block">Revogação de Consentimento</span>
+                <span class="text-xs text-slate-600">Retirar autorizações fornecidas anteriormente para funcionalidades opcionais.</span>
+              </div>
+            </div>
+            <p class="mt-3 text-xs sm:text-sm text-slate-500">
+              Para exercer qualquer um desses direitos, basta enviar uma mensagem direta para o nosso canal de atendimento ao titular de dados: <a href="mailto:contato@prontoorcei.com.br" class="text-brand-navy underline font-semibold">contato@prontoorcei.com.br</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 8 -->
+        <section id="8-retencao-exclusao" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">8</span>
+            Retenção e Exclusão de Dados
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Os dados pessoais são retidos enquanto durar a sua relação de uso com o ProntoOrcei ou pelo período necessário para atender às finalidades descritas nesta Política.
+            </p>
+            <p>
+              Ao solicitar a exclusão de sua conta, realizaremos a exclusão definitiva ou anonimização de suas informações, ressalvadas as hipóteses legais em que a guarda for obrigatória (por exemplo, registros de acesso à aplicação pelo período de 6 meses exigido pelo Marco Civil da Internet, ou prazos prescricionais legais).
+            </p>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 9 -->
+        <section id="9-dpo-contato" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">9</span>
+            Encarregado de Proteção de Dados (DPO) e Contato
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Para dúvidas sobre o tratamento de dados pessoais, solicitações relacionadas à LGPD ou sugestões de segurança da informação, entre em contato diretamente com o Encarregado pelo Tratamento de Dados Pessoais da ARTCODER:
+            </p>
+            <div class="bg-brand-surface p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <p class="font-bold text-brand-dark text-sm sm:text-base">Encarregado de Proteção de Dados (DPO)</p>
+                <p class="text-xs sm:text-sm text-slate-500">ARTCODER SISTEMAS E TECNOLOGIA LTDA — Curitiba/PR</p>
+                <p class="text-xs sm:text-sm font-semibold text-brand-navy mt-1">E-mail dedicado: contato@prontoorcei.com.br</p>
+              </div>
+              <a href="mailto:contato@prontoorcei.com.br?subject=LGPD%20-%20Privacidade%20ProntoOrcei" class="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-dark text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition-all shadow-md shadow-brand-navy/10 flex-shrink-0">
+                <i data-lucide="mail" class="w-4 h-4 text-brand-emerald"></i>
+                <span>Falar com o DPO</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 10 -->
+        <section id="10-alteracoes" class="scroll-mt-28">
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-brand-navy text-white text-sm font-extrabold flex items-center justify-center">10</span>
+            Alterações desta Política
+          </h2>
+          <div class="mt-4 space-y-3 text-sm sm:text-base">
+            <p>
+              Poderemos atualizar esta Política de Privacidade periodicamente para refletir mudanças legislativas, avanços regulatórios ou melhorias em nossos serviços digitais.
+            </p>
+            <p>
+              Toda alteração entrará em vigor a partir da data de sua publicação nesta página. Caso as modificações envolvam alterações substanciais nas finalidades do tratamento de seus dados, informaremos com antecedência via notificação no Aplicativo.
+            </p>
+          </div>
+        </section>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 text-sm mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <img src="logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-7 h-7 object-contain opacity-80">
+        <span class="text-white font-bold text-base">ProntoOrcei</span>
+        <span class="text-xs text-slate-500">© 2026 ARTCODER SISTEMAS E TECNOLOGIA LTDA. Todos os direitos reservados.</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs font-semibold">
+        <a href="termos.html" class="hover:text-white transition-colors">Termos de Uso</a>
+        <a href="privacidade.html" class="text-white transition-colors">Política de Privacidade</a>
+        <a href="mailto:contato@prontoorcei.com.br" class="hover:text-white transition-colors">Suporte</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
