@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth scroll-pt-20">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProntoOrcei — Orçamentos e Recibos Profissionais em PDF em 2 Minutos</title>
-  <meta name="description" content="Crie, assine e envie orçamentos e recibos profissionais em PDF direto no WhatsApp dos seus clientes. O app essencial para autônomos, MEI e prestadores de serviços.">
-  
+  <meta name="description"
+    content="Crie, assine e envie orçamentos e recibos profissionais em PDF direto no WhatsApp dos seus clientes. O app essencial para autônomos, MEI e prestadores de serviços.">
+
   <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://prontoorcei.com.br/">
   <meta property="og:title" content="ProntoOrcei — Orçamentos e Recibos Profissionais em PDF">
-  <meta property="og:description" content="Feche mais serviços passando credibilidade imediata com propostas e recibos elegantes gerados no seu celular.">
+  <meta property="og:description"
+    content="Feche mais serviços passando credibilidade imediata com propostas e recibos elegantes gerados no seu celular.">
   <meta property="og:image" content="logo_prontoorcei_wo_bg.png">
 
   <!-- Favicon -->
@@ -21,7 +24,8 @@
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -50,17 +54,25 @@
     .glow-effect {
       background: radial-gradient(circle at 50% 50%, rgba(0, 168, 107, 0.15) 0%, rgba(15, 76, 129, 0.05) 50%, transparent 100%);
     }
+
     .badge-shimmer {
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
       background-size: 200% 100%;
       animation: shimmer 3s infinite;
     }
+
     @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
     }
   </style>
 </head>
+
 <body class="bg-brand-surface text-slate-800 antialiased selection:bg-brand-emerald selection:text-white">
 
   <!-- NAVBAR -->
@@ -68,8 +80,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <!-- Logo -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-12 h-12 rounded-2xl overflow-hidden shadow-md shadow-brand-navy/10 group-hover:scale-105 transition-transform flex items-center justify-center bg-white border border-slate-100">
-          <img src="logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-11 h-11 object-contain" onerror="this.src='https://placehold.co/100x100/0F4C81/ffffff?text=PO'">
+        <div
+          class="w-12 h-12 rounded-2xl overflow-hidden shadow-md shadow-brand-navy/10 group-hover:scale-105 transition-transform flex items-center justify-center bg-white border border-slate-100">
+          <img src="logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-11 h-11 object-contain"
+            onerror="this.src='https://placehold.co/100x100/0F4C81/ffffff?text=PO'">
         </div>
         <div class="flex flex-col">
           <span class="text-xl font-extrabold tracking-tight text-brand-dark flex items-center gap-1">
@@ -89,7 +103,8 @@
 
       <!-- CTA Button -->
       <div class="flex items-center gap-3">
-        <a href="#baixar" class="hidden sm:inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-brand-navy/20 hover:shadow-brand-navy/30 transition-all active:scale-95">
+        <a href="#baixar"
+          class="hidden sm:inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-brand-navy/20 hover:shadow-brand-navy/30 transition-all active:scale-95">
           <i data-lucide="download" class="w-4 h-4 text-brand-emerald"></i>
           <span>Baixar Grátis</span>
         </a>
@@ -102,28 +117,34 @@
     <div class="absolute inset-0 glow-effect pointer-events-none -z-10"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
+
         <!-- Left Content -->
         <div class="lg:col-span-7 text-center lg:text-left">
           <!-- Tag -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wide uppercase mb-6 shadow-sm">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wide uppercase mb-6 shadow-sm">
             <span class="w-2 h-2 rounded-full bg-brand-emerald animate-pulse"></span>
             Feito para MEI & Autônomos de Sucesso
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-            Chega de anotar serviços no bloco de notas. Passe <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-navy via-brand-blue to-brand-emerald">credibilidade real.</span>
+            Chega de anotar serviços no bloco de notas. Passe <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-brand-navy via-brand-blue to-brand-emerald">credibilidade
+              real.</span>
           </h1>
 
           <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            Gere orçamentos e recibos profissionais em PDF com <strong>seu logotipo</strong>, chave Pix e <strong>assinatura digital</strong>. Envie direto no WhatsApp do cliente em menos de 2 minutos.
+            Gere orçamentos e recibos profissionais em PDF com <strong>seu logotipo</strong>, chave Pix e
+            <strong>assinatura digital</strong>. Envie direto no WhatsApp do cliente em menos de 2 minutos.
           </p>
 
           <!-- Action Buttons -->
           <div class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-navy hover:bg-brand-dark text-white px-7 py-4 rounded-2xl font-bold shadow-xl shadow-brand-navy/25 hover:shadow-brand-navy/40 transition-all transform hover:-translate-y-0.5">
+            <a href="#"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-navy hover:bg-brand-dark text-white px-7 py-4 rounded-2xl font-bold shadow-xl shadow-brand-navy/25 hover:shadow-brand-navy/40 transition-all transform hover:-translate-y-0.5">
               <svg class="w-6 h-6 fill-current text-brand-emerald" viewBox="0 0 24 24">
-                <path d="m22.018 13.298l-3.919 2.218l-3.515-3.493l3.543-3.521l3.891 2.202a1.49 1.49 0 0 1 0 2.594M1.337.924a1.5 1.5 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087zm12.207 10.065l3.258-3.238L3.45.195a1.47 1.47 0 0 0-.946-.179zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54z"/>
+                <path
+                  d="m22.018 13.298l-3.919 2.218l-3.515-3.493l3.543-3.521l3.891 2.202a1.49 1.49 0 0 1 0 2.594M1.337.924a1.5 1.5 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087zm12.207 10.065l3.258-3.238L3.45.195a1.47 1.47 0 0 0-.946-.179zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54z" />
               </svg>
               <div class="text-left">
                 <div class="text-[10px] text-slate-300 uppercase leading-none font-medium">Disponível no</div>
@@ -131,9 +152,11 @@
               </div>
             </a>
 
-            <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-slate-900 hover:bg-black text-white px-7 py-4 rounded-2xl font-bold shadow-xl shadow-slate-900/20 hover:shadow-slate-900/30 transition-all transform hover:-translate-y-0.5">
+            <a href="#"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-slate-900 hover:bg-black text-white px-7 py-4 rounded-2xl font-bold shadow-xl shadow-slate-900/20 hover:shadow-slate-900/30 transition-all transform hover:-translate-y-0.5">
               <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.67-1.09 1.74-.95 2.77 1 .08 2.05-.52 2.68-1.27z"/>
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.67-1.09 1.74-.95 2.77 1 .08 2.05-.52 2.68-1.27z" />
               </svg>
               <div class="text-left">
                 <div class="text-[10px] text-slate-400 uppercase leading-none font-medium">Baixe na</div>
@@ -143,7 +166,8 @@
           </div>
 
           <!-- Trust Badges -->
-          <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">
+          <div
+            class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">
             <div class="flex items-center gap-2">
               <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
               <span>100% Offline (Sem travar no interior)</span>
@@ -163,12 +187,15 @@
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative w-full max-w-[340px]">
             <!-- Subtle Glow Circle Behind Device -->
-            <div class="absolute -inset-4 bg-gradient-to-tr from-brand-emerald/30 to-brand-navy/30 rounded-[48px] blur-2xl -z-10 transform rotate-2"></div>
-            
+            <div
+              class="absolute -inset-4 bg-gradient-to-tr from-brand-emerald/30 to-brand-navy/30 rounded-[48px] blur-2xl -z-10 transform rotate-2">
+            </div>
+
             <!-- Phone Shell -->
             <div class="relative bg-slate-900 rounded-[44px] p-3 shadow-2xl ring-1 ring-slate-800">
               <!-- Notch/Island -->
-              <div class="absolute top-6 left-1/2 -translate-x-1/2 w-28 h-5 bg-slate-900 rounded-full z-30 flex items-center justify-center">
+              <div
+                class="absolute top-6 left-1/2 -translate-x-1/2 w-28 h-5 bg-slate-900 rounded-full z-30 flex items-center justify-center">
                 <div class="w-3 h-3 rounded-full bg-slate-800 mr-2"></div>
                 <div class="w-2 h-2 rounded-full bg-brand-navy"></div>
               </div>
@@ -209,12 +236,14 @@
                   <!-- Document Item 1 -->
                   <div class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
                     <div class="flex items-center justify-between">
-                      <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-slate-100 text-slate-600">ORC-0034</span>
-                      <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">Aprovado</span>
+                      <span
+                        class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-slate-100 text-slate-600">ORC-0034</span>
+                      <span
+                        class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">Aprovado</span>
                     </div>
                     <div>
                       <div class="text-xs font-bold text-slate-800">Instalação Elétrica Trifásica</div>
-                      <div class="text-[11px] text-slate-400">Cliente: Carlos Eduardo Mendes</div>
+                      <div class="text-[11px] text-slate-400">Cliente: Rafael Paraná e Silva Landi</div>
                     </div>
                     <div class="pt-2 border-t border-slate-50 flex items-center justify-between text-xs">
                       <span class="text-slate-400 text-[10px]">Hoje, 14:20</span>
@@ -225,12 +254,13 @@
                   <!-- Document Item 2 -->
                   <div class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
                     <div class="flex items-center justify-between">
-                      <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-slate-100 text-slate-600">REC-0012</span>
+                      <span
+                        class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-slate-100 text-slate-600">REC-0012</span>
                       <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-800">Pago</span>
                     </div>
                     <div>
                       <div class="text-xs font-bold text-slate-800">Troca de Pastilhas e Fluido</div>
-                      <div class="text-[11px] text-slate-400">Cliente: Juliana Paes</div>
+                      <div class="text-[11px] text-slate-400">Cliente: Tatiane Guimarães</div>
                     </div>
                     <div class="pt-2 border-t border-slate-50 flex items-center justify-between text-xs">
                       <span class="text-slate-400 text-[10px]">Ontem</span>
@@ -241,8 +271,10 @@
                   <!-- Document Item 3 -->
                   <div class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
                     <div class="flex items-center justify-between">
-                      <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-slate-100 text-slate-600">ORC-0033</span>
-                      <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800">Enviado</span>
+                      <span
+                        class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-slate-100 text-slate-600">ORC-0033</span>
+                      <span
+                        class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800">Enviado</span>
                     </div>
                     <div>
                       <div class="text-xs font-bold text-slate-800">Pintura Interna Sala Comercial</div>
@@ -257,7 +289,8 @@
 
                 <!-- Floating Bottom Bar inside mockup -->
                 <div class="p-3 bg-white border-t border-slate-100 flex items-center justify-center">
-                  <div class="w-full bg-brand-navy text-white text-center py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 shadow-md">
+                  <div
+                    class="w-full bg-brand-navy text-white text-center py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 shadow-md">
                     <i data-lucide="plus" class="w-4 h-4 text-brand-emerald"></i>
                     <span>+ Novo Documento</span>
                   </div>
@@ -266,7 +299,8 @@
             </div>
 
             <!-- Floating Stamp Card -->
-            <div class="absolute -bottom-6 -left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+            <div
+              class="absolute -bottom-6 -left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-brand-emerald">
                 <i data-lucide="file-check-2" class="w-6 h-6"></i>
               </div>
@@ -287,23 +321,24 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-brand-emerald">< 2 min</div>
-          <div class="mt-1 text-sm text-slate-300 font-medium">Para criar e enviar um orçamento</div>
-        </div>
-        <div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-white">+85%</div>
-          <div class="mt-1 text-sm text-slate-300 font-medium">Mais orçamentos aprovados na hora</div>
-        </div>
-        <div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-brand-emerald">0%</div>
-          <div class="mt-1 text-sm text-slate-300 font-medium">Uso de dados: Funciona 100% Offline</div>
-        </div>
-        <div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-white">100%</div>
-          <div class="mt-1 text-sm text-slate-300 font-medium">Privado: dados salvos no seu aparelho</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-emerald">
+            < 2 min</div>
+              <div class="mt-1 text-sm text-slate-300 font-medium">Para criar e enviar um orçamento</div>
+          </div>
+          <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-white">+85%</div>
+            <div class="mt-1 text-sm text-slate-300 font-medium">Mais orçamentos aprovados na hora</div>
+          </div>
+          <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-brand-emerald">0%</div>
+            <div class="mt-1 text-sm text-slate-300 font-medium">Uso de dados: Funciona 100% Offline</div>
+          </div>
+          <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-white">100%</div>
+            <div class="mt-1 text-sm text-slate-300 font-medium">Privado: dados salvos no seu aparelho</div>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- FEATURES SECTION -->
@@ -315,75 +350,94 @@
           Feito sob medida para quem trabalha duro e não tem tempo a perder.
         </p>
         <p class="mt-4 text-base text-slate-600">
-          Você não precisa de um ERP empresarial complexo. Você precisa de um gerador rápido, direto ao ponto e que feche vendas.
+          Você não precisa de um ERP empresarial complexo. Você precisa de um gerador rápido, direto ao ponto e que
+          feche vendas.
         </p>
       </div>
 
       <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
+
         <!-- Card 1 -->
-        <div class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-navy/30 transition-all hover:shadow-xl hover:shadow-brand-navy/5 group">
-          <div class="w-14 h-14 rounded-2xl bg-brand-navy/10 text-brand-navy flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div
+          class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-navy/30 transition-all hover:shadow-xl hover:shadow-brand-navy/5 group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-brand-navy/10 text-brand-navy flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <i data-lucide="file-text" class="w-7 h-7"></i>
           </div>
           <h3 class="text-xl font-bold text-slate-900">PDFs Impecáveis com sua Marca</h3>
           <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Seu cliente recebe um PDF limpo com seu logotipo, dados da empresa, lista detalhada de materiais e mão de obra separadas.
+            Seu cliente recebe um PDF limpo com seu logotipo, dados da empresa, lista detalhada de materiais e mão de
+            obra separadas.
           </p>
         </div>
 
         <!-- Card 2 -->
-        <div class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-emerald/30 transition-all hover:shadow-xl hover:shadow-brand-emerald/5 group">
-          <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-emerald flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div
+          class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-emerald/30 transition-all hover:shadow-xl hover:shadow-brand-emerald/5 group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-emerald flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <i data-lucide="pen-tool" class="w-7 h-7"></i>
           </div>
           <h3 class="text-xl font-bold text-slate-900">Assinatura na Tela do Celular</h3>
           <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Peça para o cliente assinar com o dedo direto na tela ao autorizar o serviço. A assinatura é carimbada automaticamente no documento.
+            Peça para o cliente assinar com o dedo direto na tela ao autorizar o serviço. A assinatura é carimbada
+            automaticamente no documento.
           </p>
         </div>
 
         <!-- Card 3 -->
-        <div class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-blue/30 transition-all hover:shadow-xl hover:shadow-brand-blue/5 group">
-          <div class="w-14 h-14 rounded-2xl bg-sky-100 text-brand-blue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div
+          class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-blue/30 transition-all hover:shadow-xl hover:shadow-brand-blue/5 group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-sky-100 text-brand-blue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <i data-lucide="qr-code" class="w-7 h-7"></i>
           </div>
           <h3 class="text-xl font-bold text-slate-900">Chave Pix Pronta para Receber</h3>
           <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Acabe com a pergunta "qual é o seu Pix?". O documento já inclui sua chave Pix formatada com destaque para o cliente pagar na hora.
+            Acabe com a pergunta "qual é o seu Pix?". O documento já inclui sua chave Pix formatada com destaque para o
+            cliente pagar na hora.
           </p>
         </div>
 
         <!-- Card 4 -->
-        <div class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-slate-400/40 transition-all hover:shadow-xl group">
-          <div class="w-14 h-14 rounded-2xl bg-slate-200 text-slate-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div
+          class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-slate-400/40 transition-all hover:shadow-xl group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-slate-200 text-slate-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <i data-lucide="receipt" class="w-7 h-7"></i>
           </div>
           <h3 class="text-xl font-bold text-slate-900">Emissão de Recibos em 1 Clique</h3>
           <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            O cliente pagou? Converta o orçamento em recibo de quitação instantaneamente ou emita recibos avulsos para comprovação imediata.
+            O cliente pagou? Converta o orçamento em recibo de quitação instantaneamente ou emita recibos avulsos para
+            comprovação imediata.
           </p>
         </div>
 
         <!-- Card 5 -->
-        <div class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-emerald/30 transition-all hover:shadow-xl group">
-          <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-emerald flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div
+          class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-emerald/30 transition-all hover:shadow-xl group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-emerald flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <i data-lucide="wifi-off" class="w-7 h-7"></i>
           </div>
           <h3 class="text-xl font-bold text-slate-900">Sem Sinal? Sem Problemas!</h3>
           <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            O ProntoOrcei funciona 100% offline. Esteja você num subsolo, sítio ou galpão sem cobertura 4G, tudo é salvo no aparelho sem falhar.
+            O ProntoOrcei funciona 100% offline. Esteja você num subsolo, sítio ou galpão sem cobertura 4G, tudo é salvo
+            no aparelho sem falhar.
           </p>
         </div>
 
         <!-- Card 6 -->
-        <div class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-navy/30 transition-all hover:shadow-xl group">
-          <div class="w-14 h-14 rounded-2xl bg-brand-navy/10 text-brand-navy flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div
+          class="p-8 rounded-3xl bg-brand-surface border border-slate-200/80 hover:border-brand-navy/30 transition-all hover:shadow-xl group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-brand-navy/10 text-brand-navy flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <i data-lucide="send" class="w-7 h-7"></i>
           </div>
           <h3 class="text-xl font-bold text-slate-900">Disparo Direto para o WhatsApp</h3>
           <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Assim que você finaliza, um botão abre o WhatsApp já com a mensagem pronta de envio e o PDF anexado com alta qualidade gráfica.
+            Assim que você finaliza, um botão abre o WhatsApp já com a mensagem pronta de envio e o PDF anexado com alta
+            qualidade gráfica.
           </p>
         </div>
 
@@ -394,25 +448,28 @@
   <!-- APP VISUAL TOUR (3 TELAS REALISTAS EM MOCKUP) -->
   <section id="telas" class="py-24 bg-slate-900 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-xs font-extrabold text-brand-emerald tracking-wider uppercase">Interface Desenhada para Produzir</h2>
+        <h2 class="text-xs font-extrabold text-brand-emerald tracking-wider uppercase">Interface Desenhada para Produzir
+        </h2>
         <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
           Feito para você operar com uma mão só na obra
         </p>
         <p class="mt-4 text-slate-400 text-base">
-          Nada de letrinhas minúsculas ou menus confusos. Botões grandes, fluxo rápido em 3 passos e contraste de alta visibilidade sob a luz do sol.
+          Nada de letrinhas minúsculas ou menus confusos. Botões grandes, fluxo rápido em 3 passos e contraste de alta
+          visibilidade sob a luz do sol.
         </p>
       </div>
 
       <!-- 3 Columns of App Screens -->
       <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-        
+
         <!-- Screen 1: Formulário Rápido -->
         <div class="flex flex-col items-center">
           <div class="w-full max-w-[280px] bg-slate-950 rounded-[36px] p-2.5 shadow-2xl border border-slate-800">
             <div class="bg-white rounded-[28px] overflow-hidden text-slate-800 p-4 space-y-3">
-              <div class="text-xs font-bold text-brand-dark pb-2 border-b border-slate-100 flex items-center justify-between">
+              <div
+                class="text-xs font-bold text-brand-dark pb-2 border-b border-slate-100 flex items-center justify-between">
                 <span>Criando Orçamento</span>
                 <span class="text-brand-emerald">Passo 2 de 3</span>
               </div>
@@ -431,7 +488,8 @@
                   <span class="font-bold">R$ 280,00</span>
                 </div>
               </div>
-              <div class="p-2 bg-emerald-50 rounded-xl text-center text-xs font-bold text-emerald-800 border border-emerald-200">
+              <div
+                class="p-2 bg-emerald-50 rounded-xl text-center text-xs font-bold text-emerald-800 border border-emerald-200">
                 + Adicionar Outro Item
               </div>
               <div class="pt-2 border-t border-slate-100 flex justify-between items-center">
@@ -442,34 +500,41 @@
           </div>
           <div class="mt-6 text-center">
             <h4 class="text-lg font-bold text-white">1. Preencha em Segundos</h4>
-            <p class="mt-1 text-sm text-slate-400 max-w-[240px]">Adicione serviços e produtos com cálculo de total automático.</p>
+            <p class="mt-1 text-sm text-slate-400 max-w-[240px]">Adicione serviços e produtos com cálculo de total
+              automático.</p>
           </div>
         </div>
 
         <!-- Screen 2: Assinatura na Tela -->
         <div class="flex flex-col items-center">
-          <div class="w-full max-w-[280px] bg-slate-950 rounded-[36px] p-2.5 shadow-2xl border border-brand-emerald/40 shadow-brand-emerald/10">
+          <div
+            class="w-full max-w-[280px] bg-slate-950 rounded-[36px] p-2.5 shadow-2xl border border-brand-emerald/40 shadow-brand-emerald/10">
             <div class="bg-white rounded-[28px] overflow-hidden text-slate-800 p-4 space-y-3">
-              <div class="text-xs font-bold text-brand-dark pb-2 border-b border-slate-100 flex items-center justify-between">
+              <div
+                class="text-xs font-bold text-brand-dark pb-2 border-b border-slate-100 flex items-center justify-between">
                 <span>Assinatura do Cliente</span>
                 <i data-lucide="pen" class="w-3.5 h-3.5 text-brand-emerald"></i>
               </div>
               <div class="text-[11px] text-slate-500">
                 Peça para o cliente assinar abaixo confirmando a aprovação do orçamento:
               </div>
-              <div class="h-28 bg-slate-50 rounded-xl border border-dashed border-slate-300 flex items-center justify-center relative">
-                <span class="font-serif italic text-2xl text-brand-navy opacity-80 rotate-[-4deg]">Carlos Eduardo M.</span>
+              <div
+                class="h-28 bg-slate-50 rounded-xl border border-dashed border-slate-300 flex items-center justify-center relative">
+                <span class="font-serif italic text-2xl text-brand-navy opacity-80 rotate-[-4deg]">Rafael P
+                  Landi.</span>
                 <div class="absolute bottom-2 right-2 text-[9px] text-slate-400 font-mono">Assinado digitalmente</div>
               </div>
               <div class="grid grid-cols-2 gap-2 pt-1">
                 <div class="py-2 text-center text-[11px] font-bold bg-slate-100 rounded-lg text-slate-600">Limpar</div>
-                <div class="py-2 text-center text-[11px] font-bold bg-brand-emerald text-white rounded-lg">Confirmar</div>
+                <div class="py-2 text-center text-[11px] font-bold bg-brand-emerald text-white rounded-lg">Confirmar
+                </div>
               </div>
             </div>
           </div>
           <div class="mt-6 text-center">
             <h4 class="text-lg font-bold text-white">2. Pegue o Aceite na Hora</h4>
-            <p class="mt-1 text-sm text-slate-400 max-w-[240px]">Evite discussões futuras colhendo a assinatura digital na hora da visita.</p>
+            <p class="mt-1 text-sm text-slate-400 max-w-[240px]">Evite discussões futuras colhendo a assinatura digital
+              na hora da visita.</p>
           </div>
         </div>
 
@@ -482,7 +547,7 @@
                 <div class="text-[9px] font-mono text-slate-400">#ORC-0034</div>
               </div>
               <div class="text-[9px] text-slate-500">
-                <strong>Cliente:</strong> Carlos Eduardo Mendes<br>
+                <strong>Cliente:</strong> Rafael Paraná e Silva Landi<br>
                 <strong>Data:</strong> 30/09/2026 | <strong>Validade:</strong> 15 dias
               </div>
               <div class="border border-slate-100 rounded text-[9px] overflow-hidden">
@@ -499,7 +564,8 @@
                 <span>Chave Pix: <strong>11998887766</strong></span>
                 <span class="text-xs font-bold text-brand-emerald">TOTAL: R$ 1.850</span>
               </div>
-              <div class="w-full py-2 bg-emerald-600 text-white rounded-lg text-center font-bold text-[11px] flex items-center justify-center gap-1">
+              <div
+                class="w-full py-2 bg-emerald-600 text-white rounded-lg text-center font-bold text-[11px] flex items-center justify-center gap-1">
                 <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
                 <span>Enviar pelo WhatsApp</span>
               </div>
@@ -507,7 +573,8 @@
           </div>
           <div class="mt-6 text-center">
             <h4 class="text-lg font-bold text-white">3. Envie o PDF Formatado</h4>
-            <p class="mt-1 text-sm text-slate-400 max-w-[240px]">Documento profissional que passa confiança e agiliza o fechamento.</p>
+            <p class="mt-1 text-sm text-slate-400 max-w-[240px]">Documento profissional que passa confiança e agiliza o
+              fechamento.</p>
           </div>
         </div>
 
@@ -519,19 +586,20 @@
   <!-- PRICING SECTION -->
   <section id="planos" class="py-24 bg-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-xs font-extrabold text-brand-emerald tracking-wider uppercase">Preço justo e sem surpresas</h2>
         <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
           Investimento que se paga no primeiro serviço fechado
         </p>
         <p class="mt-4 text-base text-slate-600">
-          Você pode testar e criar orçamentos gratuitamente. Quando quiser elevar o nível da sua empresa, desbloqueie os recursos PRO.
+          Você pode testar e criar orçamentos gratuitamente. Quando quiser elevar o nível da sua empresa, desbloqueie os
+          recursos PRO.
         </p>
       </div>
 
       <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-        
+
         <!-- Plano Free -->
         <div class="p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
           <div>
@@ -539,7 +607,8 @@
               Para Experimentar
             </div>
             <h3 class="mt-4 text-2xl font-bold text-slate-900">Plano Gratuito</h3>
-            <p class="mt-2 text-sm text-slate-600 min-h-[40px]">Ideal para testar e emitir seus primeiros documentos agora mesmo.</p>
+            <p class="mt-2 text-sm text-slate-600 min-h-[40px]">Ideal para testar e emitir seus primeiros documentos
+              agora mesmo.</p>
 
             <div class="mt-6">
               <div class="flex items-baseline gap-1">
@@ -574,20 +643,24 @@
           </div>
 
           <div class="mt-8">
-            <a href="#baixar" class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-xl font-bold text-sm bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors">
+            <a href="#baixar"
+              class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-xl font-bold text-sm bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors">
               Começar Grátis
             </a>
           </div>
         </div>
 
         <!-- Plano Anual -->
-        <div class="p-6 sm:p-8 rounded-3xl bg-white border-2 border-slate-200 hover:border-brand-blue/60 transition-all flex flex-col justify-between shadow-sm hover:shadow-md">
+        <div
+          class="p-6 sm:p-8 rounded-3xl bg-white border-2 border-slate-200 hover:border-brand-blue/60 transition-all flex flex-col justify-between shadow-sm hover:shadow-md">
           <div>
-            <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-brand-navy border border-blue-100 uppercase">
+            <div
+              class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-brand-navy border border-blue-100 uppercase">
               Assinatura Anual
             </div>
             <h3 class="mt-4 text-2xl font-bold text-slate-900">ProntoOrcei Anual</h3>
-            <p class="mt-2 text-sm text-slate-600 min-h-[40px]">Para autônomos que buscam profissionalismo total com máxima economia.</p>
+            <p class="mt-2 text-sm text-slate-600 min-h-[40px]">Para autônomos que buscam profissionalismo total com
+              máxima economia.</p>
 
             <div class="mt-6">
               <div class="flex items-baseline gap-1">
@@ -625,7 +698,8 @@
           </div>
 
           <div class="mt-8">
-            <a href="#baixar" class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-xl font-bold text-sm bg-brand-navy hover:bg-brand-dark text-white shadow-md shadow-brand-navy/20 transition-all transform hover:-translate-y-0.5">
+            <a href="#baixar"
+              class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-xl font-bold text-sm bg-brand-navy hover:bg-brand-dark text-white shadow-md shadow-brand-navy/20 transition-all transform hover:-translate-y-0.5">
               Assinar Plano Anual
             </a>
             <p class="mt-2 text-center text-[11px] text-slate-400">Renovação anual cancelável a qualquer momento.</p>
@@ -633,10 +707,12 @@
         </div>
 
         <!-- Plano Vitalício PRO (DESTAQUE) -->
-        <div class="relative p-6 sm:p-8 rounded-3xl bg-brand-dark text-white border-2 border-brand-emerald flex flex-col justify-between shadow-2xl shadow-brand-navy/20 lg:-translate-y-2">
-          
+        <div
+          class="relative p-6 sm:p-8 rounded-3xl bg-brand-dark text-white border-2 border-brand-emerald flex flex-col justify-between shadow-2xl shadow-brand-navy/20 lg:-translate-y-2">
+
           <!-- Badge Destaque -->
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-emerald to-teal-500 text-white font-extrabold text-xs uppercase tracking-wider py-1.5 px-4 rounded-full shadow-lg badge-shimmer whitespace-nowrap">
+          <div
+            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-emerald to-teal-500 text-white font-extrabold text-xs uppercase tracking-wider py-1.5 px-4 rounded-full shadow-lg badge-shimmer whitespace-nowrap">
             Melhor Custo-Benefício
           </div>
 
@@ -645,14 +721,17 @@
               Acesso Definitivo
             </div>
             <h3 class="mt-4 text-2xl font-bold text-white">ProntoOrcei Vitalício</h3>
-            <p class="mt-2 text-sm text-slate-300 min-h-[40px]">Pague uma única vez e tenha acesso para sempre, sem nenhuma mensalidade.</p>
+            <p class="mt-2 text-sm text-slate-300 min-h-[40px]">Pague uma única vez e tenha acesso para sempre, sem
+              nenhuma mensalidade.</p>
 
             <div class="mt-6">
               <div class="flex items-baseline gap-2">
                 <span class="text-4xl sm:text-5xl font-extrabold text-white">R$ 69,90</span>
-                <span class="text-emerald-400 text-xs sm:text-sm font-bold uppercase tracking-wider">Pagamento Único</span>
+                <span class="text-emerald-400 text-xs sm:text-sm font-bold uppercase tracking-wider">Pagamento
+                  Único</span>
               </div>
-              <p class="mt-1 text-xs font-semibold text-emerald-300">Por só R$ 20 a mais que 1 ano: seja PRO para sempre!</p>
+              <p class="mt-1 text-xs font-semibold text-emerald-300">Por só R$ 20 a mais que 1 ano: seja PRO para
+                sempre!</p>
             </div>
 
             <ul class="mt-8 space-y-4 text-sm text-slate-200">
@@ -684,10 +763,12 @@
           </div>
 
           <div class="mt-8">
-            <a href="#baixar" class="w-full inline-flex items-center justify-center py-4 px-6 rounded-xl font-bold text-base bg-brand-emerald hover:bg-emerald-500 text-white shadow-lg shadow-brand-emerald/30 transition-all transform hover:-translate-y-0.5">
+            <a href="#baixar"
+              class="w-full inline-flex items-center justify-center py-4 px-6 rounded-xl font-bold text-base bg-brand-emerald hover:bg-emerald-500 text-white shadow-lg shadow-brand-emerald/30 transition-all transform hover:-translate-y-0.5">
               Garantir Acesso Vitalício
             </a>
-            <p class="mt-2 text-center text-[11px] text-slate-400">Garantia total de 7 dias ou seu dinheiro de volta pelas lojas.</p>
+            <p class="mt-2 text-center text-[11px] text-slate-400">Garantia total de 7 dias ou seu dinheiro de volta
+              pelas lojas.</p>
           </div>
         </div>
 
@@ -705,9 +786,10 @@
       </div>
 
       <div class="mt-12 space-y-4">
-        
+
         <!-- Accordion Item 1 -->
-        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <details
+          class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
             <span>Preciso de internet para usar o aplicativo?</span>
             <span class="transition group-open:rotate-180 text-brand-navy">
@@ -715,12 +797,15 @@
             </span>
           </summary>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Não! O ProntoOrcei foi desenvolvido com tecnologia offline-first. Você pode criar, editar e visualizar orçamentos mesmo em locais sem sinal de celular. Você só precisará de conexão no momento em que for enviar a mensagem via WhatsApp ou e-mail.
+            Não! O ProntoOrcei foi desenvolvido com tecnologia offline-first. Você pode criar, editar e visualizar
+            orçamentos mesmo em locais sem sinal de celular. Você só precisará de conexão no momento em que for enviar a
+            mensagem via WhatsApp ou e-mail.
           </p>
         </details>
 
         <!-- Accordion Item 2 -->
-        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <details
+          class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
             <span>O cliente consegue abrir o PDF no WhatsApp sem instalar nada?</span>
             <span class="transition group-open:rotate-180 text-brand-navy">
@@ -728,12 +813,14 @@
             </span>
           </summary>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Sim! O arquivo enviado é um PDF universal padrão. Qualquer smartphone (Android, iPhone) ou computador abre na hora com nitidez perfeita para leitura ou impressão.
+            Sim! O arquivo enviado é um PDF universal padrão. Qualquer smartphone (Android, iPhone) ou computador abre
+            na hora com nitidez perfeita para leitura ou impressão.
           </p>
         </details>
 
         <!-- Accordion Item 3 -->
-        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <details
+          class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
             <span>Como funciona o pagamento único do plano Vitalício?</span>
             <span class="transition group-open:rotate-180 text-brand-navy">
@@ -741,12 +828,15 @@
             </span>
           </summary>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Você paga apenas R$ 69,90 uma única vez direto na Google Play ou App Store. O acesso PRO definitivo fica atrelado à sua conta do Google ou Apple para sempre, sem nenhuma cobrança surpresa, mensalidade ou renovação recorrente. Se trocar de aparelho no futuro, basta tocar em "Restaurar Compras".
+            Você paga apenas R$ 69,90 uma única vez direto na Google Play ou App Store. O acesso PRO definitivo fica
+            atrelado à sua conta do Google ou Apple para sempre, sem nenhuma cobrança surpresa, mensalidade ou renovação
+            recorrente. Se trocar de aparelho no futuro, basta tocar em "Restaurar Compras".
           </p>
         </details>
 
         <!-- Accordion Item 4: Anual vs Vitalício -->
-        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <details
+          class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
             <span>Qual é a diferença entre o plano Anual e o Vitalício?</span>
             <span class="transition group-open:rotate-180 text-brand-navy">
@@ -754,12 +844,17 @@
             </span>
           </summary>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Ambos liberam exatamente os mesmos recursos PRO: documentos ilimitados, seu logotipo personalizado, sem marcas d'água, assinatura na tela e chave Pix. A diferença está apenas no modelo financeiro: o <strong>Plano Anual (R$ 49,90/ano)</strong> é uma assinatura renovável anualmente (cerca de R$ 4,15/mês), enquanto o <strong>Plano Vitalício (R$ 69,90)</strong> é um pagamento único que garante acesso para a vida toda por apenas R$ 20 a mais que o primeiro ano de assinatura.
+            Ambos liberam exatamente os mesmos recursos PRO: documentos ilimitados, seu logotipo personalizado, sem
+            marcas d'água, assinatura na tela e chave Pix. A diferença está apenas no modelo financeiro: o <strong>Plano
+              Anual (R$ 49,90/ano)</strong> é uma assinatura renovável anualmente (cerca de R$ 4,15/mês), enquanto o
+            <strong>Plano Vitalício (R$ 69,90)</strong> é um pagamento único que garante acesso para a vida toda por
+            apenas R$ 20 a mais que o primeiro ano de assinatura.
           </p>
         </details>
 
         <!-- Accordion Item 4 -->
-        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <details
+          class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
             <span>Posso colocar meu CNPJ ou CPF no documento?</span>
             <span class="transition group-open:rotate-180 text-brand-navy">
@@ -767,7 +862,8 @@
             </span>
           </summary>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Com certeza! Na aba de configurações do app você cadastra seu Nome/Razão Social, CNPJ ou CPF, telefone para contato, endereço e logotipo. Esses dados aparecem organizados no topo de todas as propostas.
+            Com certeza! Na aba de configurações do app você cadastra seu Nome/Razão Social, CNPJ ou CPF, telefone para
+            contato, endereço e logotipo. Esses dados aparecem organizados no topo de todas as propostas.
           </p>
         </details>
 
@@ -789,7 +885,8 @@
       </p>
 
       <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#baixar" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-emerald hover:bg-emerald-500 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-xl shadow-brand-emerald/30 transition-all transform hover:-translate-y-0.5">
+        <a href="#baixar"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-emerald hover:bg-emerald-500 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-xl shadow-brand-emerald/30 transition-all transform hover:-translate-y-0.5">
           <i data-lucide="smartphone" class="w-5 h-5"></i>
           <span>Instalar Agora Gratuitamente</span>
         </a>
@@ -800,11 +897,12 @@
   <!-- FOOTER -->
   <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-      
+
       <div class="flex items-center gap-3">
         <img src="logo_prontoorcei_wo_bg.png" alt="Logo" class="w-7 h-7 object-contain opacity-80">
         <span class="text-white font-bold text-base">ProntoOrcei</span>
-        <span class="text-xs text-slate-500">© 2026 ARTCODER SISTEMAS E TECNOLOGIA LTDA. Todos os direitos reservados.</span>
+        <span class="text-xs text-slate-500">© 2026 ARTCODER SISTEMAS E TECNOLOGIA LTDA. Todos os direitos
+          reservados.</span>
       </div>
 
       <div class="flex items-center gap-6 text-xs font-semibold">
@@ -821,4 +919,5 @@
     lucide.createIcons();
   </script>
 </body>
+
 </html>
