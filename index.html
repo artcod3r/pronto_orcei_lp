@@ -530,20 +530,23 @@
         </p>
       </div>
 
-      <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
         
         <!-- Plano Free -->
-        <div class="p-8 sm:p-10 rounded-3xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+        <div class="p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
           <div>
             <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-slate-200 text-slate-700 uppercase">
               Para Experimentar
             </div>
             <h3 class="mt-4 text-2xl font-bold text-slate-900">Plano Gratuito</h3>
-            <p class="mt-2 text-sm text-slate-600">Ideal para testar e emitir seus primeiros documentos agora mesmo.</p>
+            <p class="mt-2 text-sm text-slate-600 min-h-[40px]">Ideal para testar e emitir seus primeiros documentos agora mesmo.</p>
 
-            <div class="mt-6 flex items-baseline gap-1">
-              <span class="text-4xl font-extrabold text-slate-900">R$ 0</span>
-              <span class="text-slate-500 text-sm font-semibold">/sempre grátis</span>
+            <div class="mt-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900">R$ 0</span>
+                <span class="text-slate-500 text-sm font-semibold">/sempre grátis</span>
+              </div>
+              <p class="mt-1 text-xs text-slate-400">Sem necessidade de cartão</p>
             </div>
 
             <ul class="mt-8 space-y-4 text-sm text-slate-600">
@@ -577,24 +580,79 @@
           </div>
         </div>
 
+        <!-- Plano Anual -->
+        <div class="p-6 sm:p-8 rounded-3xl bg-white border-2 border-slate-200 hover:border-brand-blue/60 transition-all flex flex-col justify-between shadow-sm hover:shadow-md">
+          <div>
+            <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-brand-navy border border-blue-100 uppercase">
+              Assinatura Anual
+            </div>
+            <h3 class="mt-4 text-2xl font-bold text-slate-900">ProntoOrcei Anual</h3>
+            <p class="mt-2 text-sm text-slate-600 min-h-[40px]">Para autônomos que buscam profissionalismo total com máxima economia.</p>
+
+            <div class="mt-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900">R$ 49,90</span>
+                <span class="text-slate-500 text-sm font-semibold">/ano</span>
+              </div>
+              <p class="mt-1 text-xs font-bold text-brand-emerald flex items-center gap-1">
+                <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+                Equivalente a apenas R$ 4,15/mês
+              </p>
+            </div>
+
+            <ul class="mt-8 space-y-4 text-sm text-slate-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span class="font-bold text-slate-800">Orçamentos e recibos ilimitados</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span class="font-bold text-slate-800">Seu Logotipo em alta resolução</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span>100% sem marca d’água ou menção ao app</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span>Assinatura manuscrita na tela</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span>Chave Pix destacada no documento</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="#baixar" class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-xl font-bold text-sm bg-brand-navy hover:bg-brand-dark text-white shadow-md shadow-brand-navy/20 transition-all transform hover:-translate-y-0.5">
+              Assinar Plano Anual
+            </a>
+            <p class="mt-2 text-center text-[11px] text-slate-400">Renovação anual cancelável a qualquer momento.</p>
+          </div>
+        </div>
+
         <!-- Plano Vitalício PRO (DESTAQUE) -->
-        <div class="relative p-8 sm:p-10 rounded-3xl bg-brand-dark text-white border-2 border-brand-emerald flex flex-col justify-between shadow-2xl shadow-brand-navy/20">
+        <div class="relative p-6 sm:p-8 rounded-3xl bg-brand-dark text-white border-2 border-brand-emerald flex flex-col justify-between shadow-2xl shadow-brand-navy/20 lg:-translate-y-2">
           
           <!-- Badge Destaque -->
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-emerald to-teal-500 text-white font-extrabold text-xs uppercase tracking-wider py-1.5 px-4 rounded-full shadow-lg badge-shimmer">
-            O Favorito dos Profissionais
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-emerald to-teal-500 text-white font-extrabold text-xs uppercase tracking-wider py-1.5 px-4 rounded-full shadow-lg badge-shimmer whitespace-nowrap">
+            Melhor Custo-Benefício
           </div>
 
           <div>
             <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-brand-emerald uppercase">
-              Acesso Completo
+              Acesso Definitivo
             </div>
-            <h3 class="mt-4 text-2xl font-bold text-white">ProntoOrcei PRO Vitalício</h3>
-            <p class="mt-2 text-sm text-slate-300">Pague uma única vez e use para sempre, sem mensalidades.</p>
+            <h3 class="mt-4 text-2xl font-bold text-white">ProntoOrcei Vitalício</h3>
+            <p class="mt-2 text-sm text-slate-300 min-h-[40px]">Pague uma única vez e tenha acesso para sempre, sem nenhuma mensalidade.</p>
 
-            <div class="mt-6 flex items-baseline gap-2">
-              <span class="text-4xl sm:text-5xl font-extrabold text-white">R$ 34,90</span>
-              <span class="text-emerald-400 text-sm font-semibold uppercase tracking-wider">Pagamento Único</span>
+            <div class="mt-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl sm:text-5xl font-extrabold text-white">R$ 69,90</span>
+                <span class="text-emerald-400 text-xs sm:text-sm font-bold uppercase tracking-wider">Pagamento Único</span>
+              </div>
+              <p class="mt-1 text-xs font-semibold text-emerald-300">Por só R$ 20 a mais que 1 ano: seja PRO para sempre!</p>
             </div>
 
             <ul class="mt-8 space-y-4 text-sm text-slate-200">
@@ -604,7 +662,7 @@
               </li>
               <li class="flex items-center gap-3">
                 <i data-lucide="check" class="w-5 h-5 text-brand-emerald shrink-0"></i>
-                <span class="font-bold text-white">Seu Logotipo estampado em alta resolução</span>
+                <span class="font-bold text-white">Seu Logotipo em alta resolução</span>
               </li>
               <li class="flex items-center gap-3">
                 <i data-lucide="check" class="w-5 h-5 text-brand-emerald shrink-0"></i>
@@ -618,12 +676,16 @@
                 <i data-lucide="check" class="w-5 h-5 text-brand-emerald shrink-0"></i>
                 <span>Chave Pix destacada no documento</span>
               </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-brand-emerald shrink-0"></i>
+                <span class="font-semibold text-emerald-300">Todas as futuras atualizações inclusas</span>
+              </li>
             </ul>
           </div>
 
           <div class="mt-8">
             <a href="#baixar" class="w-full inline-flex items-center justify-center py-4 px-6 rounded-xl font-bold text-base bg-brand-emerald hover:bg-emerald-500 text-white shadow-lg shadow-brand-emerald/30 transition-all transform hover:-translate-y-0.5">
-              Desbloquear Vitalício Agora
+              Garantir Acesso Vitalício
             </a>
             <p class="mt-2 text-center text-[11px] text-slate-400">Garantia total de 7 dias ou seu dinheiro de volta pelas lojas.</p>
           </div>
@@ -679,7 +741,20 @@
             </span>
           </summary>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-            Você paga apenas R$ 34,90 uma única vez direto na Google Play ou App Store. O acesso PRO fica atrelado à sua conta do Google/Apple para sempre, sem nenhuma cobrança surpresa mensal. Se você trocar de aparelho no futuro, basta tocar em "Restaurar Compras".
+            Você paga apenas R$ 69,90 uma única vez direto na Google Play ou App Store. O acesso PRO definitivo fica atrelado à sua conta do Google ou Apple para sempre, sem nenhuma cobrança surpresa, mensalidade ou renovação recorrente. Se trocar de aparelho no futuro, basta tocar em "Restaurar Compras".
+          </p>
+        </details>
+
+        <!-- Accordion Item 4: Anual vs Vitalício -->
+        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>Qual é a diferença entre o plano Anual e o Vitalício?</span>
+            <span class="transition group-open:rotate-180 text-brand-navy">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+            Ambos liberam exatamente os mesmos recursos PRO: documentos ilimitados, seu logotipo personalizado, sem marcas d'água, assinatura na tela e chave Pix. A diferença está apenas no modelo financeiro: o <strong>Plano Anual (R$ 49,90/ano)</strong> é uma assinatura renovável anualmente (cerca de R$ 4,15/mês), enquanto o <strong>Plano Vitalício (R$ 69,90)</strong> é um pagamento único que garante acesso para a vida toda por apenas R$ 20 a mais que o primeiro ano de assinatura.
           </p>
         </details>
 
