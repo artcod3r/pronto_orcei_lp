@@ -58,7 +58,7 @@ Clique com o botão direito no `index.html` e selecione *"Open with Live Server"
 
 ## 📄 Páginas Institucionais e Jurídicas
 
-- **Termos de Uso (`termos.html`)**: Regras de contratação, planos, assinaturas anuais e compra vitalícia (Google Play e Apple App Store), cancelamento e isenção de responsabilidade sobre os negócios firmados entre prestadores e tomadores.
+- **Termos de Uso (`termos.html`)**: Regras de contratação, planos, assinaturas anuais e compra vitalícia (Google Play Store), cancelamento e isenção de responsabilidade sobre os negócios firmados entre prestadores e tomadores.
 - **Política de Privacidade (`privacidade.html`)**: Em estrita conformidade com a **Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)**, detalhando finalidades de tratamento, direitos dos titulares e contato com o Encarregado de Dados (DPO).
 
 ---
