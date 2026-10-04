@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Prints com Badges - ProntoOrcei</title>
+    <style>
+        body {
+            background: #111827;
+            color: #f3f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #9ca3af;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            width: 100%;
+            max-width: 1300px;
+        }
+
+        .card {
+            background: #1f2937;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            margin: 8px 0 4px 0;
+            font-size: 16px;
+            color: #34d399;
+        }
+
+        .card span {
+            font-size: 13px;
+            color: #9ca3af;
+            text-align: center;
+            margin-bottom: 12px;
+            height: 38px;
+        }
+
+        canvas {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #374151;
+            background: #000;
+        }
+
+        button {
+            margin-top: 14px;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background: #059669;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #10b981;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gerador de Screenshots Oficiais (Google Play)</h1>
+    <p>Resolução padrão: 1080 x 2400 px com gradiente ProntoOrcei e Badges integradas</p>
+
+    <div class="grid">
+        <!-- Print 1 -->
+        <div class="card">
+            <h3>Print 1</h3>
+            <span>"Gerencie seus serviços em um só lugar"</span>
+            <canvas id="canvas1" width="1080" height="2400"></canvas>
+            <button onclick="downloadScreenshot('canvas1', '01_prontoorcei_gestao.png')">Baixar Print 1 (PNG)</button>
+        </div>
+
+        <!-- Print 2 -->
+        <div class="card">
+            <h3>Print 2</h3>
+            <span>"Crie propostas completas em menos de 1 minuto"</span>
+            <canvas id="canvas2" width="1080" height="2400"></canvas>
+            <button onclick="downloadScreenshot('canvas2', '02_prontoorcei_itens.png')">Baixar Print 2 (PNG)</button>
+        </div>
+
+        <!-- Print 3 -->
+        <div class="card">
+            <h3>Print 3</h3>
+            <span>"Coleta de assinatura digital na tela"</span>
+            <canvas id="canvas3" width="1080" height="2400"></canvas>
+            <button onclick="downloadScreenshot('canvas3', '03_prontoorcei_assinatura.png')">Baixar Print 3
+                (PNG)</button>
+        </div>
+
+        <!-- Print 4 -->
+        <div class="card">
+            <h3>Print 4</h3>
+            <span>"Receba com Pix e código copia e cola"</span>
+            <canvas id="canvas4" width="1080" height="2400"></canvas>
+            <button onclick="downloadScreenshot('canvas4', '04_prontoorcei_pix.png')">Baixar Print 4 (PNG)</button>
+        </div>
+    </div>
+
+    <script>
+        const items = [
+            {
+                canvasId: 'canvas1',
+                title: 'Gerencie seus serviços em um só lugar',
+                badge: 'ORGANIZAÇÃO & CONTROLE',
+                imgSrc: 'Print01.jpeg'
+            },
+            {
+                canvasId: 'canvas2',
+                title: 'Crie propostas completas em menos de 1 minuto',
+                badge: 'AGILIDADE NO DIA A DIA',
+                imgSrc: 'Print02.jpeg'
+            },
+            {
+                canvasId: 'canvas3',
+                title: 'Coleta de assinatura digital na tela',
+                badge: 'FECHAMENTO PROFISSIONAL',
+                imgSrc: 'Print03.jpeg'
+            },
+            {
+                canvasId: 'canvas4',
+                title: 'Receba com Pix e código copia e cola',
+                badge: 'PAGAMENTO INSTANTÂNEO',
+                imgSrc: 'Print04.jpeg'
+            }
+        ];
+
+        function renderScreen(item) {
+            const canvas = document.getElementById(item.canvasId);
+            const ctx = canvas.getContext('2d');
+            const W = 1080;
+            const H = 2400;
+
+            // 1. Fundo com gradiente da marca
+            const grad = ctx.createLinearGradient(0, 0, 0, H);
+            grad.addColorStop(0, '#09152b');
+            grad.addColorStop(0.35, '#062624');
+            grad.addColorStop(1, '#02381f');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, W, H);
+
+            // Efeito de iluminação suave no topo
+            const glow = ctx.createRadialGradient(W / 2, 220, 50, W / 2, 220, 500);
+            glow.addColorStop(0, 'rgba(16, 185, 129, 0.22)');
+            glow.addColorStop(1, 'rgba(0,0,0,0)');
+            ctx.fillStyle = glow;
+            ctx.fillRect(0, 0, W, 600);
+
+            // 2. Badge Superior (Tag)
+            const badgeText = item.badge;
+            ctx.font = 'bold 30px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+            const badgeWidth = ctx.measureText(badgeText).width + 60;
+            const badgeX = (W - badgeWidth) / 2;
+            const badgeY = 120;
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+            ctx.beginPath();
+            ctx.roundRect(badgeX, badgeY, badgeWidth, 54, 27);
+            ctx.fill();
+            ctx.strokeStyle = 'rgba(52, 211, 153, 0.4)';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.fillStyle = '#34d399';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(badgeText, W / 2, badgeY + 28);
+
+            // 3. Título Principal da Badge
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 64px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+
+            // Quebra automática de linha caso ultrapasse a largura
+            wrapText(ctx, item.title, W / 2, 260, 940, 78);
+
+            // 4. Carregar imagem do app
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.src = item.imgSrc;
+            img.onload = () => {
+                const phoneW = 880;
+                const phoneH = 1760;
+                const phoneX = (W - phoneW) / 2;
+                const phoneY = 480;
+
+                // Sombra do celular
+                ctx.save();
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.65)';
+                ctx.shadowBlur = 50;
+                ctx.shadowOffsetY = 25;
+
+                // Moldura do Celular
+                ctx.fillStyle = '#1e293b';
+                ctx.beginPath();
+                ctx.roundRect(phoneX - 12, phoneY - 12, phoneW + 24, phoneH + 24, 48);
+                ctx.fill();
+                ctx.restore();
+
+                // Recorte com cantos arredondados para encaixar o print
+                ctx.save();
+                ctx.beginPath();
+                ctx.roundRect(phoneX, phoneY, phoneW, phoneH, 40);
+                ctx.clip();
+                ctx.drawImage(img, phoneX, phoneY, phoneW, phoneH);
+                ctx.restore();
+            };
+        }
+
+        function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+            const words = text.split(' ');
+            let line = '';
+            let currentY = y;
+
+            for (let n = 0; n < words.length; n++) {
+                const testLine = line + words[n] + ' ';
+                const metrics = ctx.measureText(testLine);
+                const testWidth = metrics.width;
+                if (testWidth > maxWidth && n > 0) {
+                    ctx.fillText(line.trim(), x, currentY);
+                    line = words[n] + ' ';
+                    currentY += lineHeight;
+                } else {
+                    line = testLine;
+                }
+            }
+            ctx.fillText(line.trim(), x, currentY);
+        }
+
+        function downloadScreenshot(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // Inicializa todos os itens
+        items.forEach(renderScreen);
+    </script>
+</body>
+
+</html>
