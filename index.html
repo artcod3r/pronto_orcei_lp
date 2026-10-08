@@ -20,7 +20,7 @@
   <meta property="og:title" content="ProntoOrcei — App de Orçamento e Recibo PDF para MEI e Autônomos">
   <meta property="og:description"
     content="Crie e assine orçamentos e recibos profissionais em PDF com seu logotipo e chave Pix. Envie no WhatsApp em menos de 2 minutos.">
-  <meta property="og:image" content="https://prontoorcei.com.br/logo_prontoorcei_wo_bg.png">
+  <meta property="og:image" content="https://prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png">
   <meta property="og:image:alt" content="Logo ProntoOrcei - Aplicativo de Orçamentos e Recibos">
 
   <!-- Twitter Cards -->
@@ -29,7 +29,7 @@
   <meta name="twitter:title" content="ProntoOrcei — App de Orçamento e Recibo PDF para MEI e Autônomos">
   <meta name="twitter:description"
     content="Crie e assine orçamentos e recibos profissionais em PDF direto no WhatsApp dos seus clientes em menos de 2 minutos.">
-  <meta name="twitter:image" content="https://prontoorcei.com.br/logo_prontoorcei_wo_bg.png">
+  <meta name="twitter:image" content="https://prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favico.ico">
@@ -88,7 +88,7 @@
         "name": "ProntoOrcei",
         "legalName": "ARTCODER SISTEMAS E TECNOLOGIA LTDA",
         "url": "https://prontoorcei.com.br",
-        "logo": "https://prontoorcei.com.br/logo_prontoorcei_wo_bg.png",
+        "logo": "https://prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png",
         "email": "contato@prontoorcei.com.br"
       },
       {
@@ -161,49 +161,8 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            momo: ['"Momo Signature"', 'cursive'],
-          },
-          colors: {
-            brand: {
-              navy: '#0F4C81',
-              dark: '#0A2540',
-              blue: '#2D82B7',
-              emerald: '#00A86B',
-              surface: '#F8F9FA',
-              accent: '#10B981'
-            }
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    .glow-effect {
-      background: radial-gradient(circle at 50% 50%, rgba(0, 168, 107, 0.15) 0%, rgba(15, 76, 129, 0.05) 50%, transparent 100%);
-    }
-
-    .badge-shimmer {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
-      background-size: 200% 100%;
-      animation: shimmer 3s infinite;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: -200% 0;
-      }
-
-      100% {
-        background-position: 200% 0;
-      }
-    }
-  </style>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-brand-surface text-slate-800 antialiased selection:bg-brand-emerald selection:text-white">
@@ -219,7 +178,7 @@
       <a href="#" class="flex items-center gap-3 group">
         <div
           class="w-12 h-12 rounded-2xl overflow-hidden shadow-md shadow-brand-navy/10 group-hover:scale-105 transition-transform flex items-center justify-center bg-white border border-slate-100">
-          <img src="logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-11 h-11 object-contain"
+          <img src="assets/images/logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-11 h-11 object-contain"
             onerror="this.src='https://placehold.co/100x100/0F4C81/ffffff?text=PO'">
         </div>
         <div class="flex flex-col">
@@ -332,7 +291,7 @@
                 <!-- App Header -->
                 <div class="bg-white px-5 pt-9 pb-4 border-b border-slate-100 flex items-center justify-between">
                   <div class="flex items-center gap-2">
-                    <img src="logo_prontoorcei_wo_bg.png" alt="Logo" class="w-7 h-7 object-contain">
+                    <img src="assets/images/logo_prontoorcei_wo_bg.png" alt="Logo" class="w-7 h-7 object-contain">
                     <span class="font-extrabold text-brand-dark text-base">ProntoOrcei</span>
                   </div>
                   <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
@@ -1008,7 +967,7 @@
   <section class="py-20 bg-brand-navy relative overflow-hidden text-center text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md mx-auto flex items-center justify-center mb-6">
-        <img src="logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-12 h-12 object-contain">
+        <img src="assets/images/logo_prontoorcei_wo_bg.png" alt="Logo ProntoOrcei" class="w-12 h-12 object-contain">
       </div>
       <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
         Comece a fechar serviços com mais autoridade hoje.
@@ -1032,7 +991,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
 
       <div class="flex items-center gap-3">
-        <img src="logo_prontoorcei_wo_bg.png" alt="Logo" class="w-7 h-7 object-contain opacity-80">
+        <img src="assets/images/logo_prontoorcei_wo_bg.png" alt="Logo" class="w-7 h-7 object-contain opacity-80">
         <span class="text-white font-bold text-base">ProntoOrcei</span>
         <span class="text-xs text-slate-500">© 2026 ARTCODER SISTEMAS E TECNOLOGIA LTDA. Todos os direitos
           reservados.</span>
@@ -1065,99 +1024,7 @@
     </div>
   </aside>
 
-  <!-- Lucide Icons Init -->
-  <script>
-    lucide.createIcons();
-  </script>
-
-  <!-- Google Metrics & Custom Event Tracking -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // 1. LGPD Cookie Banner handler
-      var consentBanner = document.getElementById('cookie-consent-banner');
-      var acceptBtn = document.getElementById('accept-cookies-btn');
-      var consentKey = 'prontoorcei_cookie_consent_v1';
-
-      if (!localStorage.getItem(consentKey)) {
-        if (consentBanner) consentBanner.classList.remove('hidden');
-      }
-
-      if (acceptBtn) {
-        acceptBtn.addEventListener('click', function () {
-          localStorage.setItem(consentKey, 'granted');
-          if (consentBanner) consentBanner.classList.add('hidden');
-          if (typeof gtag === 'function') {
-            gtag('consent', 'update', {
-              'analytics_storage': 'granted',
-              'ad_storage': 'granted',
-              'ad_user_data': 'granted',
-              'ad_personalization': 'granted'
-            });
-          }
-        });
-      }
-
-      // Helper function to dispatch Google events
-      function sendGoogleEvent(eventName, params) {
-        // Push to DataLayer for Google Tag Manager (GTM)
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push(Object.assign({ event: eventName }, params));
-
-        // Push directly to Google Analytics 4 (GA4 gtag.js)
-        if (typeof gtag === 'function') {
-          gtag('event', eventName, params);
-        }
-      }
-
-      // 2. Track CTAs and App Download buttons
-      document.addEventListener('click', function (e) {
-        var trackEl = e.target.closest('[data-track-event]');
-        if (trackEl) {
-          var eventName = trackEl.getAttribute('data-track-event') || 'cta_click';
-          var location = trackEl.getAttribute('data-track-location') || 'unknown';
-          var destination = trackEl.getAttribute('href') || '';
-
-          sendGoogleEvent(eventName, {
-            event_category: 'engagement',
-            button_location: location,
-            destination_url: destination
-          });
-        }
-      });
-
-      // 3. Track FAQ accordion interactions
-      document.querySelectorAll('#faq details').forEach(function (detailEl) {
-        detailEl.addEventListener('toggle', function () {
-          if (detailEl.open) {
-            var questionEl = detailEl.querySelector('summary span');
-            var question = questionEl ? questionEl.innerText.trim() : 'FAQ';
-            sendGoogleEvent('faq_interaction', {
-              event_category: 'faq',
-              question_title: question
-            });
-          }
-        });
-      });
-
-      // 4. Scroll Depth Tracking (25%, 50%, 75%, 90%)
-      var scrollMarks = { 25: false, 50: false, 75: false, 90: false };
-      window.addEventListener('scroll', function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        if (docHeight <= 0) return;
-        var scrollPercent = Math.round((scrollTop / docHeight) * 100);
-
-        [25, 50, 75, 90].forEach(function (mark) {
-          if (scrollPercent >= mark && !scrollMarks[mark]) {
-            scrollMarks[mark] = true;
-            sendGoogleEvent('scroll_depth', {
-              depth_percentage: mark
-            });
-          }
-        });
-      }, { passive: true });
-    });
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
