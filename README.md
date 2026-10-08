@@ -21,11 +21,28 @@ A landing page foi desenvolvida com foco em performance máxima, carregamento in
 
 ```text
 pronto_orcei_lp/
-├── index.html                  # Página principal de apresentação e conversão (Landing Page)
-├── termos.html                 # Termos e Condições de Uso do aplicativo e serviços
-├── privacidade.html            # Política de Privacidade em conformidade com a LGPD
-├── logo_prontoorcei_wo_bg.png  # Logotipo oficial em alta resolução (fundo transparente)
-└── README.md                   # Documentação do projeto
+├── assets/
+│   ├── css/
+│   │   └── style.css            # Efeitos visuais e animações personalizadas
+│   ├── js/
+│   │   ├── tailwind-config.js   # Configuração modular e temas do Tailwind
+│   │   └── main.js              # Lógica de consentimento LGPD, ícones e tracking
+│   └── images/
+│       ├── logo_prontoorcei_wo_bg.png  # Logotipo oficial em alta resolução
+│       ├── Print01.jpeg         # Screenshot da tela de gestão
+│       ├── Print02.jpeg         # Screenshot da tela de propostas
+│       ├── Print03.jpeg         # Screenshot da tela de assinatura digital
+│       └── Print04.jpeg         # Screenshot da tela de Pix
+├── tools/
+│   ├── banner.html              # Utilitário de geração de banner (1024x500)
+│   └── screenshots_generator.html # Gerador de screenshots para Play Store
+├── index.html                   # Página principal de apresentação e conversão (Landing Page)
+├── termos.html                  # Termos e Condições de Uso do aplicativo e serviços
+├── privacidade.html             # Política de Privacidade em conformidade com a LGPD
+├── favico.ico                   # Favicon do site
+├── robots.txt                   # Diretrizes para motores de busca
+├── sitemap.xml                  # Mapa de URLs do site
+└── README.md                    # Documentação do projeto
 ```
 
 ---
