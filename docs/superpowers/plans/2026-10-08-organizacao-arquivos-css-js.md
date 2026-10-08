@@ -24,14 +24,14 @@
 **Interfaces:**
 - Produces: classes CSS `.glow-effect`, `.badge-shimmer` e animação `@keyframes shimmer`.
 
-- [ ] **Step 1: Criar diretórios de assets e tools**
+- [x] **Step 1: Criar diretórios de assets e tools**
 Criar as pastas `assets/css`, `assets/js`, `assets/images` e `tools`.
 
 ```bash
 mkdir -p assets/css assets/js assets/images tools
 ```
 
-- [ ] **Step 2: Criar o arquivo `assets/css/style.css`**
+- [x] **Step 2: Criar o arquivo `assets/css/style.css`**
 Extrair as regras de estilo presentes em `index.html`, `privacidade.html` e `termos.html`.
 
 ```css
@@ -57,10 +57,10 @@ Extrair as regras de estilo presentes em `index.html`, `privacidade.html` e `ter
 }
 ```
 
-- [ ] **Step 3: Verificar criação e sintaxe do CSS**
+- [x] **Step 3: Verificar criação e sintaxe do CSS**
 Verificar se o arquivo foi criado corretamente e tem conteúdo válido.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 ```bash
 git add assets/css/style.css
 git commit -m "feat(css): extrair estilos e animacoes customizadas para assets/css/style.css"
@@ -76,7 +76,7 @@ git commit -m "feat(css): extrair estilos e animacoes customizadas para assets/c
 **Interfaces:**
 - Produces: `tailwind.config` com família de fontes ('Plus Jakarta Sans', 'Momo Signature') e paleta de cores `brand` ('navy', 'dark', 'blue', 'emerald', 'surface', 'accent').
 
-- [ ] **Step 1: Criar o arquivo `assets/js/tailwind-config.js`**
+- [x] **Step 1: Criar o arquivo `assets/js/tailwind-config.js`**
 
 ```javascript
 tailwind.config = {
@@ -101,13 +101,13 @@ tailwind.config = {
 };
 ```
 
-- [ ] **Step 2: Verificar sintaxe**
+- [x] **Step 2: Verificar sintaxe**
 Executar validação rápida de sintaxe Node (se disponível) ou checagem estática.
 ```bash
 node -c assets/js/tailwind-config.js
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 ```bash
 git add assets/js/tailwind-config.js
 git commit -m "feat(js): extrair configuracao do tailwind para assets/js/tailwind-config.js"
@@ -124,7 +124,7 @@ git commit -m "feat(js): extrair configuracao do tailwind para assets/js/tailwin
 - Consumes: `lucide` (global do CDN), `window.dataLayer`, `gtag` (se presente).
 - Produces: inicialização de ícones, gerenciamento do banner LGPD, tracking de eventos de clique em CTAs, acordeão FAQ e profundidade de scroll.
 
-- [ ] **Step 1: Criar `assets/js/main.js`**
+- [x] **Step 1: Criar `assets/js/main.js`**
 
 ```javascript
 // Inicialização de Ícones Lucide
@@ -227,12 +227,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 ```
 
-- [ ] **Step 2: Verificar sintaxe**
+- [x] **Step 2: Verificar sintaxe**
 ```bash
 node -c assets/js/main.js
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 ```bash
 git add assets/js/main.js
 git commit -m "feat(js): extrair logica de banner lgpd, eventos e tracking para assets/js/main.js"
@@ -251,7 +251,7 @@ git commit -m "feat(js): extrair logica de banner lgpd, eventos e tracking para 
 - Move: `banner.html` -> `tools/banner.html`
 - Move: `screenshots_generator.html` -> `tools/screenshots_generator.html`
 
-- [ ] **Step 1: Mover os arquivos via git mv**
+- [x] **Step 1: Mover os arquivos via git mv**
 ```bash
 git mv logo_prontoorcei_wo_bg.png assets/images/
 git mv Print01.jpeg Print02.jpeg Print03.jpeg Print04.jpeg assets/images/
@@ -259,10 +259,10 @@ git mv banner.html tools/
 git mv screenshots_generator.html tools/
 ```
 
-- [ ] **Step 2: Atualizar referências internas de arquivos em `tools/`**
+- [x] **Step 2: Atualizar referências internas de arquivos em `tools/`**
 Em `tools/screenshots_generator.html`, alterar referências de `'Print01.jpeg'` para `'../assets/images/Print01.jpeg'`, etc.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 ```bash
 git add assets/images/ tools/
 git commit -m "refactor: mover imagens para assets/images/ e geradores para tools/"
@@ -277,28 +277,28 @@ git commit -m "refactor: mover imagens para assets/images/ e geradores para tool
 - Modify: `privacidade.html`
 - Modify: `termos.html`
 
-- [ ] **Step 1: Atualizar `index.html`**
+- [x] **Step 1: Atualizar `index.html`**
   - Adicionar `<link rel="stylesheet" href="assets/css/style.css">` no `<head>`.
   - Substituir o bloco inline `<script> tailwind.config = ... </script>` por `<script src="assets/js/tailwind-config.js"></script>`.
   - Remover a tag `<style>` inline.
   - Atualizar caminhos de imagens de `logo_prontoorcei_wo_bg.png` para `assets/images/logo_prontoorcei_wo_bg.png` em `og:image`, `twitter:image`, JSON-LD Schema e todas as tags `<img>`.
   - Remover scripts inline de inicialização do Lucide e tracking do final do `<body>` e incluir `<script src="assets/js/main.js"></script>`.
 
-- [ ] **Step 2: Atualizar `privacidade.html`**
+- [x] **Step 2: Atualizar `privacidade.html`**
   - Adicionar `<link rel="stylesheet" href="assets/css/style.css">` no `<head>`.
   - Substituir inline tailwind.config por `<script src="assets/js/tailwind-config.js"></script>`.
   - Remover a tag `<style>` inline.
   - Atualizar caminhos da imagem do logo para `assets/images/logo_prontoorcei_wo_bg.png`.
   - Substituir inline `<script> lucide.createIcons(); </script>` no rodapé por `<script src="assets/js/main.js"></script>`.
 
-- [ ] **Step 3: Atualizar `termos.html`**
+- [x] **Step 3: Atualizar `termos.html`**
   - Adicionar `<link rel="stylesheet" href="assets/css/style.css">` no `<head>`.
   - Substituir inline tailwind.config por `<script src="assets/js/tailwind-config.js"></script>`.
   - Remover a tag `<style>` inline.
   - Atualizar caminhos da imagem do logo para `assets/images/logo_prontoorcei_wo_bg.png`.
   - Substituir inline `<script> lucide.createIcons(); </script>` no rodapé por `<script src="assets/js/main.js"></script>`.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 ```bash
 git add index.html privacidade.html termos.html
 git commit -m "refactor(html): vincular arquivos externos de css, js e atualizar paths de imagens"
@@ -311,7 +311,7 @@ git commit -m "refactor(html): vincular arquivos externos de css, js e atualizar
 **Files:**
 - Inspect: todos os arquivos HTML, CSS e JS modificados.
 
-- [ ] **Step 1: Verificar se restaram referências antigas a imagens na raiz**
+- [x] **Step 1: Verificar se restaram referências antigas a imagens na raiz**
 Executar grep para garantir que nenhuma página faz referência a `src="logo_` ou `src="Print` sem prefixo `assets/images/` ou `../assets/images/`.
 
 ```bash
@@ -319,10 +319,10 @@ git grep 'logo_prontoorcei_wo_bg.png'
 git grep 'Print0'
 ```
 
-- [ ] **Step 2: Testar se os arquivos locais carregam sem erros no navegador ou via linter**
+- [x] **Step 2: Testar se os arquivos locais carregam sem erros no navegador ou via linter**
 Verificar se todas as tags link e script apontam para arquivos existentes no disco.
 
-- [ ] **Step 3: Commit final se houver ajustes**
+- [x] **Step 3: Commit final se houver ajustes**
 ```bash
 git status
 ```
