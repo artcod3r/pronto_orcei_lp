@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prontoorcei.com.br/sitemap.xml
+Sitemap: https://www.prontoorcei.com.br/sitemap.xml

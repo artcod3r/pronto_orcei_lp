@@ -91,6 +91,6 @@ Este repositório e seus códigos-fonte, elementos gráficos, logotipos e textos
 
 ## 📬 Contato e Suporte
 
-- **Website**: [prontoorcei.com.br](https://prontoorcei.com.br/)
+- **Website**: [prontoorcei.com.br](https://www.prontoorcei.com.br/)
 - **E-mail de Suporte e DPO**: [contato@prontoorcei.com.br](mailto:contato@prontoorcei.com.br)
 - **Localização**: Curitiba, PR — Brasil

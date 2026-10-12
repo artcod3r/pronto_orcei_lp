@@ -100,8 +100,8 @@ Para garantir compliance com as diretrizes do Google Tag Manager e Search Consol
   - `logo_prontoorcei_wo_bg.png`
   - `Print01.jpeg`, `Print02.jpeg`, `Print03.jpeg`, `Print04.jpeg`
 - Atualizar todas as menções em `index.html`, `privacidade.html`, `termos.html`:
-  - `og:image` e `twitter:image`: `https://prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png`
-  - Schema JSON-LD: `"logo": "https://prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png"`
+  - `og:image` e `twitter:image`: `https://www.prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png`
+  - Schema JSON-LD: `"logo": "https://www.prontoorcei.com.br/assets/images/logo_prontoorcei_wo_bg.png"`
   - Todas as tags `<img>` e referências relativas (`src="assets/images/..."`).
 
 ### 3.6. Ferramentas Utilitárias (`tools/`)
